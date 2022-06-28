@@ -1,0 +1,152 @@
+.page-room {
+  transition: background 0.2s linear;
+  width: 100vw;
+  position: relative;
+}
+
+.page-room .wrapper {
+  margin: 0 auto;
+  width: min(64rem, 100%);
+  padding: 0;
+}
+
+.page-room header {
+  padding: 2rem;
+  border-bottom: 0.0625rem solid #e2e2e2;
+}
+
+.page-room header .content {
+  width: min(64rem, 100%);
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-room header .content a {
+  max-height: 3rem;
+  cursor: pointer;
+}
+
+.page-room main {
+  width: min(64rem, 100%);
+  padding-inline: 2rem;
+  margin-top: 1rem;
+}
+
+.page-room main .page-title {
+  margin: 0rem 0 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.page-room main .page-title h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  color: #29292e;
+}
+
+.page-room main .page-title span {
+  margin-left: 1rem;
+  background: var(--primary-color);
+  border-radius: 1000rem;
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.page-room main .page-title p {
+  display: flex;
+  flex: 2;
+  justify-content: flex-end;
+}
+
+.page-room main .page-title p button {
+  color: white;
+  height: 2rem;
+  width: auto;
+  border: 0;
+  border-radius: 1000rem;
+  background-color: var(--primary-color);
+  padding: 0 2rem;
+  cursor: pointer;
+}
+
+.page-room main .page-title p button:hover {
+  filter: brightness(0.9);
+}
+
+.page-room main .feedback-list {
+  width: min(64rem, 100%);
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill, auto);
+  grid-row-gap: 0.5rem;
+  grid-template-areas: 'A B C';
+  grid-column-gap: 1.5rem;
+}
+
+.page-room main .feedback-list .bugs {
+  grid-area: A;
+  align-self: flex-start;
+  background: var(--primary-color);
+  border-radius: 0.8rem;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.page-room main .feedback-list .feedbacks-bug {
+  margin-top: 3rem;
+  grid-area: A;
+  align-self: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-room main .feedback-list .ideas {
+  grid-area: B;
+  align-self: flex-start;
+  background: var(--primary-color);
+  border-radius: 0.8rem;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.page-room main .feedback-list .feedbacks-idea {
+  margin-top: 3rem;
+  grid-area: B;
+  align-self: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.page-room main .feedback-list .others {
+  grid-area: C;
+  align-self: flex-start;
+  background: var(--primary-color);
+  border-radius: 0.8rem;
+  padding: 0.5rem 0;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.page-room main .feedback-list .feedbacks-other {
+  margin-top: 3rem;
+  grid-area: C;
+  align-self: flex-start;
+  justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}

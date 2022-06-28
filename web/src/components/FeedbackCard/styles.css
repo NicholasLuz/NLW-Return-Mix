@@ -1,0 +1,54 @@
+.feedback {
+  display: flex;
+  height: auto;
+  width: 19rem;
+  padding: 0;
+
+  background: var(--primary-color);
+  color: black;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.04);
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.feedback .comment {
+  text-align: justify;
+  margin: 0.5rem;
+  overflow-wrap: break-word;
+}
+
+.feedback img {
+  width: 100%;
+  height: auto;
+}
+
+.feedback footer.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  padding: 0;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+footer .user-info img {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+}
+
+footer .user-info span {
+  margin-left: 0.5rem;
+  color: black;
+}
+
+footer div {
+  display: flex;
+}
